@@ -1,0 +1,3 @@
+SELECT DISTINCT CarMaker,CarModel ,
+SUM (SalePiceInDollar) AS TotalSalePrice
+FROM CarSales WHERE  DATEDIFF(DAY, (SaleDate,'%m/%d/%Y'),GETDATE())==30 ;
